@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para el encabezado h1 */
+.text-container h1 {
+    font-size: 30px; /* Ajusta el tamaño de fuente del encabezado h1 */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en una nueva línea */
+}
+
+/* Estilos para el mensaje de error */
+.error {
+    width: 100%;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 40px;
+    box-sizing: border-box; /* Incluye el relleno en el tamaño total del elemento */
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    flex: 0 0 50%; /* Establece un tamaño fijo del 50% del contenedor principal */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el relleno en el tamaño total del elemento */
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+/* Estilos para la imagen */
+.image-container img {
+    max-width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilos para el contenedor del texto */
+.text-container {
+    flex: 0 0 50%; /* Establece un tamaño fijo del 50% del contenedor principal */
+    padding: 20px;
+    padding-top: 140px; /* Ajusta el espacio superior del contenedor del texto */
+    box-sizing: border-box; /* Incluye el relleno en el tamaño total del elemento */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el relleno en el tamaño total del elemento */
+}
+
+/* Estilos para el botón #exit */
+#exit {
+    font-size: 16px;
+    padding: 16px;
+    color: #fff;
+    background-color: #003057;
+    border-radius: 10%;
+    border: none;
+}
+
+#exit:hover {
+    color: #003057;
+    background-color: #fff;
+    border: 2px solid #003057;
+    padding: 14px; /* Reduce el padding para compensar el ancho del borde */
+    font-weight: 500;
+}
+
+
+
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del contenedor principal a columna */
+    }
+
+    .image-container,
+    .text-container {
+        flex: 0 0 100%; /* Establece un tamaño fijo del 100% del contenedor principal */
+        margin: 0 auto; /* Centra horizontalmente los contenedores */
+    }
+
+    /* Ajustes para dispositivos móviles */
+    .image-container,
+    .text-container
+    {
+        padding: 10px; /* Ajusta el espacio interno en dispositivos más pequeños */
+        font-size: 25px; /* Ajusta el tamaño de fuente en dispositivos más pequeños */
+    }
+
+    .text-container h1 {
+        font-size: 35px; /* Ajusta el tamaño de fuente del encabezado h1 para dispositivos más pequeños */
+        margin-top: 0;
+    }
+
+    .text-container {
+        margin-bottom: 20px;
+    }
+}
